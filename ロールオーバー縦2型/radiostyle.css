@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------- 初期設定 ----------*/
+body{
+padding:0;
+margin:0;
+background-color: #FFFFFF;
+font-family: sans-serif;
+font-size: 14px;
+}
+
+/*----------色初期設定----------*/
+.maincolor{
+	color:#00F;
+}
+.subcolor{
+	color:#F00;
+}
+.etccolor{
+	color:#FF0;
+}
+.txtcolor{
+	color:#666;
+}
+.mainbgcolor{
+	background-color:#00F;
+}
+.subbgcolor{
+	background-color:#F00;
+}
+.etcbgcolor{
+	background-color:#FF0;
+}
+
+/*----------文字初期設定----------*/
+a:link {
+color: #00F;
+padding :0px 0px 0px 50px ;
+}
+
+a:visited {
+color: #FF0;
+}
+
+a:hover {
+color: #F00;
+}
+
+.txthonbun {
+line-height: 120%;
+letter-spacing: 1px;
+padding :0px 0px 0px 50px ;
+text-align: left;
+
+}
+.txtfooter{
+text-align: center;
+font-size: 12px;
+padding :20px 0px 20px 0px ;
+}
+
+/*----------親ボックス----------*/
+.menubox{
+width:800px;
+margin: auto;
+text-align: center;
+padding: 0;
+border-radius: 5px;
+/*border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;*/
+}
+.globalsubmenubox{
+width:100%;
+text-align: center;
+margin: 0 auto;
+}
+
+.localsubmenubox{
+width:800px;
+padding: 0;
+display: inline-block;
+}
+
+/*----------UserInterfaceのレイアウト----------*/	
+.topbar{
+width:100%;
+height:20px;
+}
+
+.top{
+max-width:800px;
+height:150px;
+margin: auto;
+}
+/*----------TOP内部のレイアウト----------*/	
+
+.topinner{
+display: table;
+height: 150px;
+width: 100%;
+text-align: left;
+}
+.rogo{
+display:table-cell;
+vertical-align:middle;	
+}
+.rogo img{
+display: inline-block;
+padding: 0px;
+}
+
+/*----------TOP内部のレイアウト----------*/	
+
+.mainmenu{
+max-width:100%;
+height:50px;
+margin: auto;
+padding: 0;
+text-align: left;
+}
+
+.submenu{
+width:200px;
+display: table-cell;
+border-radius: 5px;
+}
+
+.contents{
+width:600px;
+background-color:#ffffff;
+display: table-cell;
+text-align:left;
+}
+
+
+.footer{
+max-width:800px;
+margin: auto;
+border-radius: 5px;
+}
+
+
+.footbar{
+width:100%;
+height:20px;
+}
+
+
+
+
+
+/*----------ラジオボタンmenu----------*/
+/*----------ラジオボタン非表示設定----------*/
+input[type=radio] {
+display: none; 
+}
+/*----------最初に選択されているボタン----------*/
+input[type="radio"]:checked + label {
+background-image:url("img/02.png");
+background-repeat: no-repeat;
+background-size:contain;
+/*background: #31A9EE; */
+color: #000000; 
+}
+/*----------選択されていないボタン----------*/
+input[type="radio"] + label {
+background-image:url("img/01.png");
+background-repeat: no-repeat;
+background-size:contain;
+color: #ffffff; 
+}
+/*----------ラジオボタンのmenu本体設定----------*/
+.label {
+display: block;
+float: left;
+margin: -1px;
+width: 100px; 
+height: 50px;
+padding-left: 5px;
+padding-right: 5px;
+color: #b20000;
+text-align: center;
+line-height: 50px;
+cursor: pointer;
+border: 0px solid #006DD9;
+border-radius: 5px;
+position:relative; 
+top:1px;
+}
+/*----------マウスオーバー----------*/
+.label:hover {
+background-image:url("img/03.png");
+background-repeat: no-repeat;
+background-size:contain;
+}
+
+/*----------Font Awesome-----------*/
+.sign:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f058';
+  font-weight: 900;
+}
+.arrow:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0a9';
+  font-weight: 900;
+}
+h5:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0a9';
+  font-weight: 900;
+  padding-right : 3px;
+}

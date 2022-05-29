@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* boxlayout */
+body{
+padding:0;
+margin:0;
+background-color: #FFFFFF;
+}
+
+#wrap01{
+width:800px;
+margin: auto;
+text-align: center;
+padding: 0;
+}
+
+#topbar{
+width:100%;
+height:20px;
+background-color:#00FF00;
+}
+
+#top{
+max-width:800px;
+height:150px;
+background-color:#0000FF;
+margin: auto;
+}
+
+#mainmenu{
+max-width:100%;
+height:50px;
+margin: auto;
+padding: 0;
+text-align: left;
+}
+
+#wrap02{
+width:100%;
+text-align: center;
+margin: 0 auto;
+}
+
+#wrap03{
+width:800px;
+padding: 0;
+display: inline-block;
+}
+
+#submenu{
+width:200px;
+background-color:#CCCCCC;
+display: table-cell;
+}
+
+#contents{
+width:600px;
+background-color:#ffffff;
+display: table-cell;
+text-align:left;
+}
+
+
+#footer{
+max-width:800px;
+background-color:#FF00FF;
+margin: auto;
+}
+
+#footbar{
+width:100%;
+height:20px;
+background-color:#00FF00;
+}
+
+/* menulayout */
+.table-ul {
+  display: table;
+  table-layout: fixed;
+  width: 800px;
+  height: 50px;
+  padding-left: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin:  0;
+
+}
+.table-ul li {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.table-ul li:last-child {
+  border-right: 0;
+}
+.table-ul li a {
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 0px 5px 0px;
+}
+
+
+/*--mainmenu list--*/
+.table-ul li:nth-child(1){
+  background:#cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.table-ul li:nth-child(2){
+  background:#0071b2;
+  border-bottom: 1px solid #0071b2;
+}
+.table-ul li:nth-child(3){
+  background:#0071b2;
+  border-bottom: 1px solid #0071b2;
+}
+.table-ul li:nth-child(4){
+  background:#0071b2;
+  border-bottom: 1px solid #0071b2;
+}
+
+/* text */
+a:link {
+  color: #CC9900;
+  font-size: 14px;
+}
+
+a:visited {
+  color: #CC9900;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #009933;
+  font-size: 14px;
+}
+
+p {
+  margin: 18px 0 18px 0;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+/*--Font Awesome部分--*/
+.sign:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f058';
+  font-weight: 900;
+}
+h5:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0a9';
+  font-weight: 900;
+  padding-right : 3px;
+}
